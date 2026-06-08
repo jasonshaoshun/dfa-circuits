@@ -1,0 +1,23 @@
+\begin{table*}[!t]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Method Category} & \textbf{Method Name} & \textbf{IOI} & \textbf{MCQA} & \textbf{Arith +} & \textbf{Arith -} & \textbf{ARC-E} & \textbf{ARC-C} & \textbf{Average} \\
+\midrule
+NAP-IG-Inputs & Random Alignment & 0.25 & 0.25 & - & 0.25 & 0.25 & 0.25 & 0.25 \\
+NAP-IG-Inputs & Scrambled Input $s$ & 0.25 & 0.27 & - & 0.25 & 0.25 & 0.27 & 0.26 \\
+NAP-IG-Inputs & Permuted $W$ Columns & 0.25 & \underline{0.32} & - & 0.25 & 0.29 & 0.29 & 0.28 \\
+NAP-IG-Inputs & Heuristic Depth-Mean & - & - & - & - & - & - & - \\
+\midrule
+NAP-IG-Inputs & Gold (Upper Bound) & \textbf{0.91} & \textbf{1.07} & - & 0.25 & \textbf{0.91} & \textbf{0.95} & \textbf{0.82} \\
+\midrule
+NAP-IG-Inputs & DFA (In-Distribution) & \underline{0.30} & 0.30 & - & \underline{0.27} & 0.29 & \underline{0.29} & \underline{0.29} \\
+NAP-IG-Inputs & DFA (Near-Distribution) & - & - & - & 0.27 & \underline{0.29} & 0.28 & 0.28 \\
+NAP-IG-Inputs & DFA (Far/Zero-Shot) & 0.26 & 0.25 & - & \textbf{0.39} & 0.27 & 0.26 & 0.29 \\
+\bottomrule
+\end{tabular}
+}
+\caption{Validation and ablation study for NAP-IG-Inputs, target model qwen2.5-1.5b (source qwen2.5-0.5b; metric: area\_under).}
+\label{tab:ablation-detail-eap-ig-inputs-qwen2-5-0-5b-to-qwen2-5-1-5b}
+\end{table*}

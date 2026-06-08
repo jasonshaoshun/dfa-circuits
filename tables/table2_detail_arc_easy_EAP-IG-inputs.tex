@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Target Model Pair} & \textbf{Baseline} & \textbf{DFA (Best)} & \textbf{Gold} & \textbf{Recovery\%} \\
+\midrule
+Llama-3 (1B $\to$ 3B) & 0.25 & 0.54 & 0.52 & 104.1\% \\
+Llama-3 (1B $\to$ 8B) & 0.25 & 0.47 & 0.97 & 49.0\% \\
+Llama-3 (3B $\to$ 8B) & 0.25 & 0.34 & 0.97 & 34.7\% \\
+Qwen-2.5 (0.5B $\to$ 1.5B) & 0.25 & 0.29 & 0.91 & 32.2\% \\
+Qwen-2.5 (0.5B $\to$ 3B) & 0.25 & 0.35 & 1.06 & 32.6\% \\
+Qwen-2.5 (1.5B $\to$ 3B) & 0.27 & 0.31 & 1.06 & 29.6\% \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Model scaling detail for ARC-E using NAP-IG-Inputs (metric: area\_under). Recovery\% $= \frac{\text{Aligned(best)}}{\text{Gold}}\times 100$.}
+\label{tab:scaling-detail-arc-easy-eap-ig-inputs}
+\end{table}

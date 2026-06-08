@@ -1,0 +1,19 @@
+Method,Setting / Control,IOI,MCQA,Arith +,Arith -,ARC-E,ARC-C
+NAP-IG-Inputs,1. Random $W$ (Lower Bound),0.25,0.25,0.25,0.25,0.25,0.25
+NAP-IG-Inputs,2. Scrambled input $s$,0.28,0.28,0.25,0.27,0.29,0.49
+NAP-IG-Inputs,3. Permuted $W$ columns,0.25,0.26,0.25,0.25,0.27,0.26
+NAP-IG-Inputs,4. Heuristic Depth Mean,,,,,,
+NAP-IG-Inputs,DFA (Zero-shot),0.57,0.46,0.27,0.46,0.27,0.25
+NAP-IG-Inputs,DFA (Best),0.57,0.46,0.45,0.67,0.34,0.34
+NAP,1. Random $W$ (Lower Bound),0.25,0.25,0.25,0.25,0.25,0.25
+NAP,2. Scrambled input $s$,0.26,0.26,0.25,0.26,0.25,0.35
+NAP,3. Permuted $W$ columns,0.25,0.26,0.25,0.25,0.26,0.26
+NAP,4. Heuristic Depth Mean,,,,,,
+NAP,DFA (Zero-shot),0.36,0.32,0.27,0.26,0.29,0.27
+NAP,DFA (Best),0.36,0.32,0.40,0.40,0.29,0.29
+NAP-IG-Activations,1. Random $W$ (Lower Bound),0.25,0.26,0.25,0.25,0.26,0.26
+NAP-IG-Activations,2. Scrambled input $s$,0.25,0.31,0.25,0.42,0.25,0.29
+NAP-IG-Activations,3. Permuted $W$ columns,0.29,0.26,0.25,0.25,0.26,0.32
+NAP-IG-Activations,4. Heuristic Depth Mean,,,,,,
+NAP-IG-Activations,DFA (Zero-shot),0.44,0.50,0.28,0.59,0.36,0.43
+NAP-IG-Activations,DFA (Best),0.50,0.54,0.46,0.59,0.56,0.56

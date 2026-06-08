@@ -1,0 +1,29 @@
+\begin{table*}[h]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Method Category} & \textbf{Transfer Setting} & \textbf{IOI} & \textbf{MCQA} & \textbf{Arith +} & \textbf{Arith -} & \textbf{ARC-E} & \textbf{ARC-C} & \textbf{Average} \\
+\midrule
+Baseline & Random Alignment & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 \\
+\midrule
+\multirow{4}{*}{NAP-IG-Inputs} & Gold (Upper Bound) & 0.28 & \underline{0.47} & 0.26 & 0.25 & \underline{0.52} & \textbf{0.48} & 0.38 \\
+& DFA (In-Distribution) & \textbf{0.35} & 0.41 & 0.29 & 0.45 & 0.41 & \underline{0.39} & 0.38 \\
+& DFA (Near-Distribution) & - & - & \underline{0.43} & \underline{0.47} & \textbf{0.54} & 0.37 & \textbf{0.45} \\
+& DFA (Far/Zero-Shot) & \underline{0.31} & \textbf{0.48} & \textbf{0.51} & \textbf{0.49} & 0.47 & 0.38 & \underline{0.44} \\
+\midrule
+\multirow{4}{*}{NAP} & Gold (Upper Bound) & 0.25 & 0.35 & 0.25 & 0.25 & 0.37 & 0.34 & 0.30 \\
+& DFA (In-Distribution) & \textbf{0.32} & \textbf{0.49} & 0.26 & \underline{0.26} & \textbf{0.46} & \textbf{0.52} & \underline{0.39} \\
+& DFA (Near-Distribution) & - & - & \textbf{0.39} & 0.25 & \underline{0.44} & 0.48 & \textbf{0.39} \\
+& DFA (Far/Zero-Shot) & \underline{0.27} & \underline{0.46} & \underline{0.28} & \textbf{0.26} & 0.44 & \underline{0.48} & 0.37 \\
+\midrule
+\multirow{4}{*}{NAP-IG-Activations} & Gold (Upper Bound) & \textbf{0.38} & 0.35 & 0.25 & 0.25 & \textbf{0.43} & 0.35 & 0.33 \\
+& DFA (In-Distribution) & 0.33 & \underline{0.39} & 0.53 & \textbf{0.45} & \underline{0.41} & \underline{0.44} & 0.42 \\
+& DFA (Near-Distribution) & - & - & \underline{0.72} & 0.28 & 0.41 & 0.37 & \underline{0.44} \\
+& DFA (Far/Zero-Shot) & \underline{0.33} & \textbf{0.46} & \textbf{0.82} & \underline{0.28} & 0.34 & \textbf{0.51} & \textbf{0.46} \\
+\bottomrule
+\end{tabular}
+}
+\caption{Circuit Recovery Performance (Llama-3 (1B $\to$ 3B)). We report the faithfulness score using area\_under. Near-distribution evaluation is only applicable to Arithmetic and ARC task pairs.}
+\label{tab:leaderboard-llama3-1b-to-llama3-3b}
+\end{table*}

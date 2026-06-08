@@ -1,0 +1,29 @@
+\begin{table*}[h]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Method Category} & \textbf{Transfer Setting} & \textbf{IOI} & \textbf{MCQA} & \textbf{Arith +} & \textbf{Arith -} & \textbf{ARC-E} & \textbf{ARC-C} & \textbf{Average} \\
+\midrule
+Baseline & Random Alignment & 0.25 & 0.25 & - & 0.25 & 0.25 & 0.25 & 0.25 \\
+\midrule
+\multirow{4}{*}{NAP-IG-Inputs} & Gold (Upper Bound) & \textbf{0.91} & \textbf{1.13} & - & \textbf{0.32} & \textbf{1.06} & \textbf{0.94} & \textbf{0.87} \\
+& DFA (In-Distribution) & 0.24 & \underline{0.37} & - & \underline{0.26} & 0.34 & \underline{0.34} & 0.31 \\
+& DFA (Near-Distribution) & - & - & - & 0.26 & \underline{0.35} & 0.33 & \underline{0.31} \\
+& DFA (Far/Zero-Shot) & \underline{0.30} & 0.32 & - & 0.25 & 0.28 & 0.28 & 0.29 \\
+\midrule
+\multirow{4}{*}{NAP} & Gold (Upper Bound) & 0.25 & \textbf{0.82} & - & \underline{0.25} & \textbf{0.89} & \textbf{1.10} & \textbf{0.66} \\
+& DFA (In-Distribution) & \underline{0.25} & \underline{0.37} & - & \textbf{0.26} & \underline{0.37} & 0.38 & \underline{0.33} \\
+& DFA (Near-Distribution) & - & - & - & 0.25 & 0.31 & \underline{0.42} & 0.33 \\
+& DFA (Far/Zero-Shot) & \textbf{0.32} & 0.27 & - & 0.24 & 0.32 & 0.35 & 0.30 \\
+\midrule
+\multirow{4}{*}{NAP-IG-Activations} & Gold (Upper Bound) & \underline{0.25} & \textbf{0.90} & - & 0.25 & \textbf{0.90} & \textbf{1.11} & \textbf{0.68} \\
+& DFA (In-Distribution) & \textbf{0.25} & \underline{0.36} & - & \textbf{0.26} & 0.29 & 0.30 & 0.29 \\
+& DFA (Near-Distribution) & - & - & - & \underline{0.25} & \underline{0.34} & 0.39 & 0.33 \\
+& DFA (Far/Zero-Shot) & 0.25 & 0.34 & - & 0.25 & 0.34 & \underline{0.48} & \underline{0.33} \\
+\bottomrule
+\end{tabular}
+}
+\caption{Circuit Recovery Performance (Qwen-2.5 (0.5B $\to$ 3B)). We report the faithfulness score using area\_under. Near-distribution evaluation is only applicable to Arithmetic and ARC task pairs.}
+\label{tab:leaderboard-qwen2-5-0-5b-to-qwen2-5-3b}
+\end{table*}

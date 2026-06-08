@@ -1,0 +1,7 @@
+Target Model Pair,Baseline,DFA (Best),Gold,Faithfulness Recovery Ratio (%)
+Llama-3 (1B $\to$ 3B),0.251905,0.390321,0.252375,154.659
+Llama-3 (1B $\to$ 8B),0.250000,0.403842,0.250000,161.537
+Llama-3 (3B $\to$ 8B),0.251986,0.400449,0.250000,160.180
+Qwen-2.5 (0.5B $\to$ 1.5B),,,,
+Qwen-2.5 (0.5B $\to$ 3B),,,,
+Qwen-2.5 (1.5B $\to$ 3B),,,,

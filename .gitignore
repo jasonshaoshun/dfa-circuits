@@ -1,0 +1,11 @@
+__pycache__/
+.DS_Store
+hf_token.txt
+*old/
+*.pt
+/circuits/
+/logs/
+/results/
+isambard.sh
+isambard_single.sh
+.codex

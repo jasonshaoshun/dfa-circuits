@@ -1,0 +1,33 @@
+\begin{table*}[!t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Method} & \textbf{Target Model Pair} & \textbf{Baseline} & \textbf{DFA (Best)} & \textbf{Gold} & \textbf{Faithfulness Recovery Ratio} \\
+\midrule
+\multirow{6}{*}{NAP-IG-Inputs} & Llama-3 (1B $\to$ 3B) & 0.25 & 0.35 & 0.28 & 123.4\% \\
+& Llama-3 (1B $\to$ 8B) & 0.25 & 0.34 & 0.63 & 53.5\% \\
+& Llama-3 (3B $\to$ 8B) & 0.25 & 0.57 & 0.63 & 91.0\% \\
+& Qwen-2.5 (0.5B $\to$ 1.5B) & 0.25 & 0.30 & 0.91 & 32.8\% \\
+& Qwen-2.5 (0.5B $\to$ 3B) & 0.25 & 0.30 & 0.91 & 32.9\% \\
+& Qwen-2.5 (1.5B $\to$ 3B) & 0.25 & 0.36 & 0.91 & 39.9\% \\
+\midrule
+\multirow{6}{*}{NAP-IG-Activations} & Llama-3 (1B $\to$ 3B) & 0.25 & 0.33 & 0.38 & 88.2\% \\
+& Llama-3 (1B $\to$ 8B) & 0.25 & 0.43 & 0.35 & 124.7\% \\
+& Llama-3 (3B $\to$ 8B) & 0.25 & 0.50 & 0.35 & 143.7\% \\
+& Qwen-2.5 (0.5B $\to$ 1.5B) & 0.25 & 0.29 & 0.25 & 114.2\% \\
+& Qwen-2.5 (0.5B $\to$ 3B) & 0.25 & 0.25 & 0.25 & 100.2\% \\
+& Qwen-2.5 (1.5B $\to$ 3B) & 0.25 & 0.29 & 0.25 & 117.9\% \\
+\midrule
+\multirow{6}{*}{NAP} & Llama-3 (1B $\to$ 3B) & 0.25 & 0.32 & 0.25 & 128.8\% \\
+& Llama-3 (1B $\to$ 8B) & 0.25 & 0.33 & 0.31 & 106.6\% \\
+& Llama-3 (3B $\to$ 8B) & 0.25 & 0.36 & 0.31 & 116.4\% \\
+& Qwen-2.5 (0.5B $\to$ 1.5B) & 0.25 & 0.28 & 0.25 & 113.7\% \\
+& Qwen-2.5 (0.5B $\to$ 3B) & 0.25 & 0.32 & 0.25 & 128.4\% \\
+& Qwen-2.5 (1.5B $\to$ 3B) & 0.25 & 0.28 & 0.25 & 110.5\% \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Model scaling summary for IOI. Best aligned performance for this task using area\_under. Recovery\% $= \frac{\text{Aligned(best)}}{\text{Gold}}\times 100$.}
+\label{tab:scaling-summary-ioi}
+\end{table*}

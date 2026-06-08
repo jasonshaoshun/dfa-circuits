@@ -1,0 +1,23 @@
+\begin{table*}[!t]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Method Category} & \textbf{Method Name} & \textbf{IOI} & \textbf{MCQA} & \textbf{Arith +} & \textbf{Arith -} & \textbf{ARC-E} & \textbf{ARC-C} & \textbf{Average} \\
+\midrule
+NAP-IG-Activations & Random Alignment & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 \\
+NAP-IG-Activations & Scrambled Input $s$ & \textbf{0.56} & 0.34 & 0.31 & 0.25 & 0.33 & 0.26 & 0.34 \\
+NAP-IG-Activations & Permuted $W$ Columns & 0.30 & 0.26 & 0.25 & 0.25 & 0.26 & 0.27 & 0.26 \\
+NAP-IG-Activations & Heuristic Depth-Mean & - & - & - & - & - & - & - \\
+\midrule
+NAP-IG-Activations & Gold (Upper Bound) & 0.35 & \textbf{0.60} & 0.33 & \textbf{0.31} & \textbf{0.59} & \textbf{0.63} & \textbf{0.47} \\
+\midrule
+NAP-IG-Activations & DFA (In-Distribution) & \underline{0.43} & 0.32 & 0.38 & 0.27 & 0.29 & 0.27 & 0.33 \\
+NAP-IG-Activations & DFA (Near-Distribution) & - & - & \textbf{0.41} & 0.27 & 0.25 & 0.27 & 0.30 \\
+NAP-IG-Activations & DFA (Far/Zero-Shot) & 0.36 & \underline{0.40} & \underline{0.41} & \underline{0.28} & \underline{0.35} & \underline{0.40} & \underline{0.37} \\
+\bottomrule
+\end{tabular}
+}
+\caption{Validation and ablation study for NAP-IG-Activations, target model llama3-8b (source llama3-1b; metric: area\_under).}
+\label{tab:ablation-detail-eap-ig-activations-llama3-1b-to-llama3-8b}
+\end{table*}

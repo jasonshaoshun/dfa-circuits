@@ -1,0 +1,19 @@
+\begin{table*}[!t]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccccc}
+\toprule
+Training Source & Test: IOI & Test: MCQA & Test: Arith + & Test: Arith - & Test: ARC-E & Test: ARC-C & Average \\
+\midrule
+Train: IOI & \textit{0.50} & 0.50 & \textbf{0.48} & 0.44 & 0.55 & 0.54 & 0.50 \\
+Train: MCQA & \underline{0.50} & \textit{0.54} & 0.46 & 0.44 & 0.53 & 0.53 & 0.50 \\
+Train: Arith + & 0.50 & \textbf{0.65} & \underline{\textit{0.46}} & \textbf{0.59} & \underline{0.59} & \underline{0.60} & \textbf{0.57} \\
+Train: Arith - & 0.45 & \underline{0.62} & 0.27 & \underline{\textit{0.53}} & \textbf{0.60} & \textbf{0.61} & \underline{0.51} \\
+Train: ARC-E & \textbf{0.50} & 0.48 & 0.28 & 0.45 & \textit{0.53} & 0.56 & 0.47 \\
+Train: ARC-C & 0.25 & 0.47 & 0.28 & 0.44 & 0.56 & \textit{0.56} & 0.43 \\
+\bottomrule
+\end{tabular}
+}
+\caption{Global Alignment Matrix (Task-to-Task Transfer). Faithfulness scores for NAP-IG-Activations on llama3-3b $\to$ llama3-8b using area\_under. The diagonal represents in-distribution performance.}
+\label{tab:heatmap-eap-ig-activations-llama3-3b-to-llama3-8b}
+\end{table*}

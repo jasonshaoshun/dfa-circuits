@@ -1,0 +1,9 @@
+Method Category,Method Name,IOI,MCQA,Arith +,Arith -,ARC-E,ARC-C,Average
+NAP-IG-Activations,Random Alignment,0.25,0.25,,0.25,0.28,0.30,0.26
+NAP-IG-Activations,Scrambled Input $s$,0.25,0.43,,0.25,0.33,0.25,0.30
+NAP-IG-Activations,Permuted $W$ Columns,0.25,0.25,,0.25,0.26,0.25,0.25
+NAP-IG-Activations,Heuristic Depth-Mean,,,,,,,
+NAP-IG-Activations,Gold (Upper Bound),0.25,0.60,,0.24,0.76,0.72,0.51
+NAP-IG-Activations,DFA (In-Distribution),0.29,0.34,,0.40,0.32,0.31,0.33
+NAP-IG-Activations,DFA (Near-Distribution),,,,0.25,0.30,0.32,0.29
+NAP-IG-Activations,DFA (Far/Zero-Shot),0.25,0.28,,0.40,0.42,0.44,0.36

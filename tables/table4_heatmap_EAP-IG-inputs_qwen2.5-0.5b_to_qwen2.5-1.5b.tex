@@ -1,0 +1,19 @@
+\begin{table*}[!t]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccccc}
+\toprule
+Training Source & Test: IOI & Test: MCQA & Test: Arith + & Test: Arith - & Test: ARC-E & Test: ARC-C & Average \\
+\midrule
+Train: IOI & \textbf{\textit{0.30}} & \underline{0.31} & - & 0.25 & 0.25 & 0.36 & 0.29 \\
+Train: MCQA & 0.25 & \textit{0.30} & - & 0.25 & 0.30 & 0.30 & 0.28 \\
+Train: Arith + & \underline{0.26} & 0.29 & - & \underline{0.27} & \underline{0.40} & \textbf{0.40} & \underline{0.32} \\
+Train: Arith - & 0.26 & \textbf{0.41} & - & \textbf{\textit{0.27}} & \textbf{0.41} & \underline{0.38} & \textbf{0.35} \\
+Train: ARC-E & 0.25 & 0.30 & - & 0.26 & \textit{0.29} & 0.28 & 0.28 \\
+Train: ARC-C & 0.25 & 0.30 & - & 0.26 & 0.29 & \textit{0.29} & 0.28 \\
+\bottomrule
+\end{tabular}
+}
+\caption{Global Alignment Matrix (Task-to-Task Transfer). Faithfulness scores for NAP-IG-Inputs on qwen2.5-0.5b $\to$ qwen2.5-1.5b using area\_under. The diagonal represents in-distribution performance.}
+\label{tab:heatmap-eap-ig-inputs-qwen2-5-0-5b-to-qwen2-5-1-5b}
+\end{table*}

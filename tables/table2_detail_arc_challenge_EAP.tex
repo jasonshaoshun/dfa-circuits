@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Target Model Pair} & \textbf{Baseline} & \textbf{DFA (Best)} & \textbf{Gold} & \textbf{Recovery\%} \\
+\midrule
+Llama-3 (1B $\to$ 3B) & 0.28 & 0.52 & 0.34 & 151.7\% \\
+Llama-3 (1B $\to$ 8B) & 0.25 & 0.53 & 0.59 & 90.1\% \\
+Llama-3 (3B $\to$ 8B) & 0.25 & 0.29 & 0.59 & 49.3\% \\
+Qwen-2.5 (0.5B $\to$ 1.5B) & 0.27 & 0.36 & 0.67 & 53.5\% \\
+Qwen-2.5 (0.5B $\to$ 3B) & 0.25 & 0.42 & 1.10 & 37.8\% \\
+Qwen-2.5 (1.5B $\to$ 3B) & 0.25 & 0.38 & 1.10 & 34.6\% \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Model scaling detail for ARC-C using NAP (metric: area\_under). Recovery\% $= \frac{\text{Aligned(best)}}{\text{Gold}}\times 100$.}
+\label{tab:scaling-detail-arc-challenge-eap}
+\end{table}

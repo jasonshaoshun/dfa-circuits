@@ -1,0 +1,23 @@
+\begin{table*}[!t]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Method Category} & \textbf{Method Name} & \textbf{IOI} & \textbf{MCQA} & \textbf{Arith +} & \textbf{Arith -} & \textbf{ARC-E} & \textbf{ARC-C} & \textbf{Average} \\
+\midrule
+NAP & Random Alignment & 0.25 & 0.27 & - & 0.25 & 0.25 & 0.25 & 0.25 \\
+NAP & Scrambled Input $s$ & 0.25 & \underline{0.57} & - & \underline{0.25} & 0.29 & 0.25 & 0.32 \\
+NAP & Permuted $W$ Columns & \underline{0.29} & 0.30 & - & 0.25 & 0.30 & 0.29 & 0.29 \\
+NAP & Heuristic Depth-Mean & - & - & - & - & - & - & - \\
+\midrule
+NAP & Gold (Upper Bound) & 0.25 & \textbf{0.82} & - & 0.25 & \textbf{0.89} & \textbf{1.10} & \textbf{0.66} \\
+\midrule
+NAP & DFA (In-Distribution) & 0.25 & 0.37 & - & \textbf{0.26} & \underline{0.37} & 0.38 & \underline{0.33} \\
+NAP & DFA (Near-Distribution) & - & - & - & 0.25 & 0.31 & \underline{0.42} & 0.33 \\
+NAP & DFA (Far/Zero-Shot) & \textbf{0.32} & 0.27 & - & 0.24 & 0.32 & 0.35 & 0.30 \\
+\bottomrule
+\end{tabular}
+}
+\caption{Validation and ablation study for NAP, target model qwen2.5-3b (source qwen2.5-0.5b; metric: area\_under).}
+\label{tab:ablation-detail-eap-qwen2-5-0-5b-to-qwen2-5-3b}
+\end{table*}

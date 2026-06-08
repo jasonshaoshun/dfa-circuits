@@ -1,0 +1,36 @@
+\begin{table*}[!t]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Method} & \textbf{Setting / Control} & \textbf{IOI} & \textbf{MCQA} & \textbf{Arith +} & \textbf{Arith -} & \textbf{ARC-E} & \textbf{ARC-C} \\
+\midrule
+\multirow{6}{*}{NAP-IG-Inputs} & 1. Random $W$ (Lower Bound) & 0.25 & 0.25 & - & 0.25 & 0.25 & 0.25 \\
+& 2. Scrambled input $s$ & 0.25 & 0.36 & - & 0.25 & 0.25 & 0.29 \\
+& 3. Permuted $W$ columns & \underline{0.27} & \textbf{0.38} & - & 0.25 & \textbf{0.35} & \textbf{0.34} \\
+& 4. Heuristic Depth Mean & - & - & - & - & - & - \\
+\addlinespace[4pt]
+& \textbf{DFA (Zero-shot)} & \textbf{0.30} & 0.32 & - & \underline{0.25} & 0.28 & 0.28 \\
+& \textbf{DFA (Best)} & \textbf{0.30} & \underline{0.37} & - & \textbf{0.26} & \underline{0.35} & \underline{0.34} \\
+\midrule
+\multirow{6}{*}{NAP} & 1. Random $W$ (Lower Bound) & 0.25 & 0.27 & - & 0.25 & 0.25 & 0.25 \\
+& 2. Scrambled input $s$ & 0.25 & \textbf{0.57} & - & \underline{0.25} & 0.29 & 0.25 \\
+& 3. Permuted $W$ columns & \underline{0.29} & 0.30 & - & 0.25 & 0.30 & 0.29 \\
+& 4. Heuristic Depth Mean & - & - & - & - & - & - \\
+\addlinespace[4pt]
+& \textbf{DFA (Zero-shot)} & \textbf{0.32} & 0.27 & - & 0.24 & \underline{0.32} & \underline{0.35} \\
+& \textbf{DFA (Best)} & \textbf{0.32} & \underline{0.37} & - & \textbf{0.26} & \textbf{0.37} & \textbf{0.42} \\
+\midrule
+\multirow{6}{*}{NAP-IG-Activations} & 1. Random $W$ (Lower Bound) & 0.25 & 0.27 & - & 0.25 & 0.25 & 0.25 \\
+& 2. Scrambled input $s$ & 0.25 & \textbf{0.60} & - & 0.25 & 0.24 & 0.25 \\
+& 3. Permuted $W$ columns & \textbf{0.30} & 0.30 & - & \underline{0.25} & 0.31 & \underline{0.31} \\
+& 4. Heuristic Depth Mean & - & - & - & - & - & - \\
+\addlinespace[4pt]
+& \textbf{DFA (Zero-shot)} & 0.25 & 0.34 & - & 0.25 & \underline{0.34} & \textbf{0.48} \\
+& \textbf{DFA (Best)} & \underline{0.25} & \underline{0.36} & - & \textbf{0.26} & \textbf{0.34} & \textbf{0.48} \\
+\bottomrule
+\end{tabular}
+}
+\caption{Validation and Ablation Study for target model qwen2.5-3b (source qwen2.5-0.5b). We report the zero-shot faithfulness drop under various structural corruptions using CPR.}
+\label{tab:ablations-summary-qwen2-5-0-5b-to-qwen2-5-3b}
+\end{table*}

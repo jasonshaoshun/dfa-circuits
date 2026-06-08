@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Target Model Pair} & \textbf{Baseline} & \textbf{DFA (Best)} & \textbf{Gold} & \textbf{Recovery\%} \\
+\midrule
+Llama-3 (1B $\to$ 3B) & 0.25 & 0.32 & 0.25 & 128.8\% \\
+Llama-3 (1B $\to$ 8B) & 0.25 & 0.33 & 0.31 & 106.6\% \\
+Llama-3 (3B $\to$ 8B) & 0.25 & 0.36 & 0.31 & 116.4\% \\
+Qwen-2.5 (0.5B $\to$ 1.5B) & 0.25 & 0.28 & 0.25 & 113.7\% \\
+Qwen-2.5 (0.5B $\to$ 3B) & 0.25 & 0.32 & 0.25 & 128.4\% \\
+Qwen-2.5 (1.5B $\to$ 3B) & 0.25 & 0.28 & 0.25 & 110.5\% \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Model scaling detail for IOI using NAP (metric: area\_under). Recovery\% $= \frac{\text{Aligned(best)}}{\text{Gold}}\times 100$.}
+\label{tab:scaling-detail-ioi-eap}
+\end{table}

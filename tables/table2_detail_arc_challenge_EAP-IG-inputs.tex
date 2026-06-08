@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Target Model Pair} & \textbf{Baseline} & \textbf{DFA (Best)} & \textbf{Gold} & \textbf{Recovery\%} \\
+\midrule
+Llama-3 (1B $\to$ 3B) & 0.25 & 0.39 & 0.48 & 80.5\% \\
+Llama-3 (1B $\to$ 8B) & 0.25 & 0.38 & 0.94 & 41.0\% \\
+Llama-3 (3B $\to$ 8B) & 0.25 & 0.34 & 0.94 & 36.4\% \\
+Qwen-2.5 (0.5B $\to$ 1.5B) & 0.25 & 0.29 & 0.95 & 30.5\% \\
+Qwen-2.5 (0.5B $\to$ 3B) & 0.25 & 0.34 & 0.94 & 36.5\% \\
+Qwen-2.5 (1.5B $\to$ 3B) & 0.27 & 0.31 & 0.94 & 32.9\% \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Model scaling detail for ARC-C using NAP-IG-Inputs (metric: area\_under). Recovery\% $= \frac{\text{Aligned(best)}}{\text{Gold}}\times 100$.}
+\label{tab:scaling-detail-arc-challenge-eap-ig-inputs}
+\end{table}

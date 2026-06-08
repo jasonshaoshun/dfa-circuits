@@ -1,0 +1,23 @@
+\begin{table*}[!t]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Method Category} & \textbf{Method Name} & \textbf{IOI} & \textbf{MCQA} & \textbf{Arith +} & \textbf{Arith -} & \textbf{ARC-E} & \textbf{ARC-C} & \textbf{Average} \\
+\midrule
+NAP-IG-Inputs & Random Alignment & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 \\
+NAP-IG-Inputs & Scrambled Input $s$ & 0.28 & 0.28 & 0.25 & 0.27 & 0.29 & \underline{0.49} & 0.31 \\
+NAP-IG-Inputs & Permuted $W$ Columns & 0.25 & 0.26 & 0.25 & 0.25 & 0.27 & 0.26 & 0.26 \\
+NAP-IG-Inputs & Heuristic Depth-Mean & - & - & - & - & - & - & - \\
+\midrule
+NAP-IG-Inputs & Gold (Upper Bound) & \textbf{0.63} & \textbf{1.02} & \textbf{0.46} & 0.37 & \textbf{0.97} & \textbf{0.94} & \textbf{0.73} \\
+\midrule
+NAP-IG-Inputs & DFA (In-Distribution) & 0.49 & 0.26 & \underline{0.45} & 0.45 & 0.30 & 0.34 & 0.38 \\
+NAP-IG-Inputs & DFA (Near-Distribution) & - & - & 0.29 & \textbf{0.67} & \underline{0.34} & 0.34 & \underline{0.41} \\
+NAP-IG-Inputs & DFA (Far/Zero-Shot) & \underline{0.57} & \underline{0.46} & 0.27 & \underline{0.46} & 0.27 & 0.25 & 0.38 \\
+\bottomrule
+\end{tabular}
+}
+\caption{Validation and ablation study for NAP-IG-Inputs, target model llama3-8b (source llama3-3b; metric: area\_under).}
+\label{tab:ablation-detail-eap-ig-inputs-llama3-3b-to-llama3-8b}
+\end{table*}

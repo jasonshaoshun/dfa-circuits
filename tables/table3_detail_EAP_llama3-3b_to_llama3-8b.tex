@@ -1,0 +1,23 @@
+\begin{table*}[!t]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccccccc}
+\toprule
+\textbf{Method Category} & \textbf{Method Name} & \textbf{IOI} & \textbf{MCQA} & \textbf{Arith +} & \textbf{Arith -} & \textbf{ARC-E} & \textbf{ARC-C} & \textbf{Average} \\
+\midrule
+NAP & Random Alignment & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 & 0.25 \\
+NAP & Scrambled Input $s$ & 0.26 & 0.26 & 0.25 & 0.26 & 0.25 & \underline{0.35} & 0.27 \\
+NAP & Permuted $W$ Columns & 0.25 & 0.26 & 0.25 & 0.25 & 0.26 & 0.26 & 0.26 \\
+NAP & Heuristic Depth-Mean & - & - & - & - & - & - & - \\
+\midrule
+NAP & Gold (Upper Bound) & \underline{0.31} & \textbf{0.38} & 0.25 & 0.29 & \textbf{0.57} & \textbf{0.59} & \textbf{0.40} \\
+\midrule
+NAP & DFA (In-Distribution) & 0.23 & 0.27 & \textbf{0.40} & \textbf{0.40} & 0.29 & 0.28 & 0.31 \\
+NAP & DFA (Near-Distribution) & - & - & \underline{0.36} & \underline{0.37} & 0.28 & 0.29 & \underline{0.32} \\
+NAP & DFA (Far/Zero-Shot) & \textbf{0.36} & \underline{0.32} & 0.27 & 0.26 & \underline{0.29} & 0.27 & 0.30 \\
+\bottomrule
+\end{tabular}
+}
+\caption{Validation and ablation study for NAP, target model llama3-8b (source llama3-3b; metric: area\_under).}
+\label{tab:ablation-detail-eap-llama3-3b-to-llama3-8b}
+\end{table*}

@@ -1,0 +1,33 @@
+\begin{table*}[!t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Method} & \textbf{Target Model Pair} & \textbf{Baseline} & \textbf{DFA (Best)} & \textbf{Gold} & \textbf{Faithfulness Recovery Ratio} \\
+\midrule
+\multirow{6}{*}{NAP-IG-Inputs} & Llama-3 (1B $\to$ 3B) & 0.25 & 0.51 & 0.26 & 196.5\% \\
+& Llama-3 (1B $\to$ 8B) & 0.25 & 0.67 & 0.46 & 146.7\% \\
+& Llama-3 (3B $\to$ 8B) & 0.25 & 0.45 & 0.46 & 98.9\% \\
+& Qwen-2.5 (0.5B $\to$ 1.5B) &  &  &  &  \\
+& Qwen-2.5 (0.5B $\to$ 3B) &  &  &  &  \\
+& Qwen-2.5 (1.5B $\to$ 3B) &  &  &  &  \\
+\midrule
+\multirow{6}{*}{NAP-IG-Activations} & Llama-3 (1B $\to$ 3B) & 0.25 & 0.82 & 0.25 & 321.9\% \\
+& Llama-3 (1B $\to$ 8B) & 0.25 & 0.41 & 0.33 & 121.5\% \\
+& Llama-3 (3B $\to$ 8B) & 0.25 & 0.46 & 0.33 & 138.9\% \\
+& Qwen-2.5 (0.5B $\to$ 1.5B) &  &  &  &  \\
+& Qwen-2.5 (0.5B $\to$ 3B) &  &  &  &  \\
+& Qwen-2.5 (1.5B $\to$ 3B) &  &  &  &  \\
+\midrule
+\multirow{6}{*}{NAP} & Llama-3 (1B $\to$ 3B) & 0.25 & 0.39 & 0.25 & 154.7\% \\
+& Llama-3 (1B $\to$ 8B) & 0.25 & 0.40 & 0.25 & 161.5\% \\
+& Llama-3 (3B $\to$ 8B) & 0.25 & 0.40 & 0.25 & 160.2\% \\
+& Qwen-2.5 (0.5B $\to$ 1.5B) &  &  &  &  \\
+& Qwen-2.5 (0.5B $\to$ 3B) &  &  &  &  \\
+& Qwen-2.5 (1.5B $\to$ 3B) &  &  &  &  \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Model scaling summary for Arith +. Best aligned performance for this task using area\_under. Recovery\% $= \frac{\text{Aligned(best)}}{\text{Gold}}\times 100$.}
+\label{tab:scaling-summary-arithmetic-addition}
+\end{table*}

@@ -1,0 +1,7 @@
+Training Source,Test: IOI,Test: MCQA,Test: Arith +,Test: Arith -,Test: ARC-E,Test: ARC-C,Average
+Train: IOI,0.49,0.58,0.46,0.46,0.56,0.54,0.51
+Train: MCQA,0.44,0.26,0.29,0.27,0.21,0.17,0.27
+Train: Arith +,0.44,0.52,0.45,0.67,0.63,0.60,0.55
+Train: Arith -,0.39,0.70,0.29,0.45,0.76,0.76,0.56
+Train: ARC-E,0.41,0.33,0.27,0.26,0.30,0.34,0.32
+Train: ARC-C,0.41,0.35,0.28,0.27,0.34,0.34,0.33

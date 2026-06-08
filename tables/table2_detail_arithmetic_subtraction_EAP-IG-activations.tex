@@ -1,0 +1,19 @@
+\begin{table}[!t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Target Model Pair} & \textbf{Baseline} & \textbf{DFA (Best)} & \textbf{Gold} & \textbf{Recovery\%} \\
+\midrule
+Llama-3 (1B $\to$ 3B) & 0.25 & 0.45 & 0.25 & 179.5\% \\
+Llama-3 (1B $\to$ 8B) & 0.25 & 0.28 & 0.31 & 89.9\% \\
+Llama-3 (3B $\to$ 8B) & 0.25 & 0.59 & 0.31 & 190.6\% \\
+Qwen-2.5 (0.5B $\to$ 1.5B) & 0.25 & 0.40 & 0.24 & 164.9\% \\
+Qwen-2.5 (0.5B $\to$ 3B) & 0.25 & 0.26 & 0.25 & 102.4\% \\
+Qwen-2.5 (1.5B $\to$ 3B) & 0.26 & 0.27 & 0.25 & 108.8\% \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Model scaling detail for Arith - using NAP-IG-Activations (metric: area\_under). Recovery\% $= \frac{\text{Aligned(best)}}{\text{Gold}}\times 100$.}
+\label{tab:scaling-detail-arithmetic-subtraction-eap-ig-activations}
+\end{table}

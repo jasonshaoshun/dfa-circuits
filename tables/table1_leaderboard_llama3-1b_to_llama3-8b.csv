@@ -1,0 +1,14 @@
+Method Category,Transfer Setting,IOI,MCQA,Arith +,Arith -,ARC-E,ARC-C,Average
+Baseline,Random Alignment,0.25,0.25,0.25,0.25,0.25,0.25,0.25
+NAP-IG-Inputs,Gold (Upper Bound),0.63,1.02,0.46,0.37,0.97,0.94,0.73
+NAP-IG-Inputs,DFA (In-Distribution),0.34,0.51,0.39,0.27,0.30,0.33,0.36
+NAP-IG-Inputs,DFA (Near-Distribution),,,0.53,0.28,0.17,0.37,0.34
+NAP-IG-Inputs,DFA (Far/Zero-Shot),0.33,0.51,0.67,0.39,0.47,0.38,0.46
+NAP,Gold (Upper Bound),0.31,0.38,0.25,0.29,0.57,0.59,0.40
+NAP,DFA (In-Distribution),0.33,0.46,0.35,0.33,0.49,0.53,0.41
+NAP,DFA (Near-Distribution),,,0.30,0.26,0.47,0.46,0.37
+NAP,DFA (Far/Zero-Shot),0.27,0.40,0.40,0.26,0.30,0.29,0.32
+NAP-IG-Activations,Gold (Upper Bound),0.35,0.60,0.33,0.31,0.59,0.63,0.47
+NAP-IG-Activations,DFA (In-Distribution),0.43,0.32,0.38,0.27,0.29,0.27,0.33
+NAP-IG-Activations,DFA (Near-Distribution),,,0.41,0.27,0.25,0.27,0.30
+NAP-IG-Activations,DFA (Far/Zero-Shot),0.36,0.40,0.41,0.28,0.35,0.40,0.37
